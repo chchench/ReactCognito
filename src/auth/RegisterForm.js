@@ -34,15 +34,30 @@ const RegisterForm = (props) => {
     >
       {(props) => (
         <form onSubmit={props.handleSubmit}>
-          <Field name="name" validate={isRequired}>
+          <Field name="given_name" validate={isRequired}>
             {({ input, meta }) => (
               <div className="mb-3">
-                <label className="form-label required">Name</label>
+                <label className="form-label required">Given Name</label>
                 <input
                   {...input}
                   type="text"
-                  placeholder="Enter your name"
-                  autoComplete="name"
+                  placeholder="Given name"
+                  autoComplete="given_name"
+                  autoFocus
+                  className={getFormControlCssClass(meta)}
+                />
+              </div>
+            )}
+          </Field>
+          <Field name="family_name" validate={isRequired}>
+            {({ input, meta }) => (
+              <div className="mb-3">
+                <label className="form-label required">Family Name</label>
+                <input
+                  {...input}
+                  type="text"
+                  placeholder="Family name"
+                  autoComplete="family_name"
                   autoFocus
                   className={getFormControlCssClass(meta)}
                 />

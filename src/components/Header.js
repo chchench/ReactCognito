@@ -8,7 +8,7 @@ const Header = ({ isSignedIn, currentUser, onSignOutClick }) => {
     <nav className="navbar navbar-expand navbar-dark bg-dark mb-3">
       <div className="container-lg">
         <Link to={"/"} className="navbar-brand">
-          React + Cognito
+          AIxMed Cloud Next-Gen
         </Link>
         <div className="d-flex align-items-center auth-links">
           <NavBarLinks

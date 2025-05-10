@@ -1,5 +1,5 @@
 export const amplify_auth_config = {
-  region: "us-west-2",
-  userPoolId: "us-west-2_abcdef",
-  userPoolWebClientId: "abcdefghijklmnopqrst123456789",
+  region: "us-east-1",
+  userPoolId: "us-east-1_WX2zKTRiQ",
+  userPoolWebClientId: "fs2m0ko1budvrdmb50rg16j74",
 };
